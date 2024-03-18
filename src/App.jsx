@@ -7,7 +7,7 @@ const App = () => {
   const [enablePos, setEnablePos] = useState(false);
   const [lable, setLable] = useState('')
   const [position, setPosition] = useState({ x: 0, y: 0 });
-  
+
   const handleclick = (event, node) => {
     setLable(node.data.label);
     setPosition({ x: event.clientX, y: event.clientY });
@@ -16,7 +16,8 @@ const App = () => {
 
 
   return (
-    <div style={{ width: "100%", height: "100vh", border: "2px solid gray" }}>
+    <div style={{ width: "100%", height: "100vh", }}>
+      <p>LizMotors Assigment Answer Using React Flow</p>
       <ReactFlow
         nodes={initialNodes}
         fitView
@@ -27,26 +28,32 @@ const App = () => {
 
       <div
         onMouseEnter={() => setEnablePos(true)}
+        onMouseLeave={() => setEnablePos(false)}
+
         style={{
+          fontSize: '14px',
           position: "absolute",
+          padding: '12px',
+          color: 'BLACK',
+          boxShadow: '2px 2px 2px gray',
           opacity: enablePos ? 1 : 0,
           transition: "0.5s",
-          backgroundColor: "gray",
+          backgroundColor: "#D9DDDC",
           top: enablePos ? position.y : "",
           left: enablePos ? position.x : "",
-          width: "300px",
-          height: "100px",
+          width: "100px",
+          height: "content-fit",
         }}
       >
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <p>Name:{lable}</p>
-          <p>Total Review</p>
-          <p>Positive Review</p>
-          <p>Comments</p>
-        </div>
+        <p>Name:{lable}</p>
+        <p>Total Review</p>
+        <p>Positive Review</p>
+        <p>Comments</p>
+
       </div>
     </div>
   );
 };
 
 export default App;
+
