@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ReactFlow from "reactflow";
 import "reactflow/dist/style.css";
-import { initialEdges, initialNodes } from "./nodes";
+import { initialEdges, initialNodes } from "./data/flowData";
 
 const App = () => {
   const [enablePos, setEnablePos] = useState(false);
