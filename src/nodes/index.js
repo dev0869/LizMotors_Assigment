@@ -15,6 +15,7 @@ export const initialNodes = [
     data: { label: "Research" },
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#2A4494", color: "white" },
   },
   {
     id: "2",
@@ -22,6 +23,7 @@ export const initialNodes = [
     data: { label: "Planning" },
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#82B3E8", color: "white" },
   },
   {
     id: "3",
@@ -29,6 +31,7 @@ export const initialNodes = [
     data: { label: "Designing" },
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#E96343", color: "white" },
   },
   {
     id: "4",
@@ -36,6 +39,7 @@ export const initialNodes = [
     data: { label: "Manufacturing" },
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#E8919D", color: "white" },
   },
   {
     id: "5",
@@ -43,9 +47,10 @@ export const initialNodes = [
     data: { label: "Sales/Marketing" },
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#A684EB", color: "white" },
   },
-  // childrens
 
+  // children Nodes
   {
     id: "6",
     position: { x: 250, y: -50 },
@@ -53,6 +58,7 @@ export const initialNodes = [
     type: "output",
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#2A4494", color: "white" },
   },
   {
     id: "7",
@@ -60,6 +66,7 @@ export const initialNodes = [
     data: { label: "Internal" },
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#2A4494", color: "white" },
   },
   {
     id: "8",
@@ -68,6 +75,7 @@ export const initialNodes = [
     type: "output",
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#82B3E8", color: "white" },
   },
   {
     id: "9",
@@ -76,6 +84,7 @@ export const initialNodes = [
     type: "output",
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#82B3E8", color: "white" },
   },
   {
     id: "10",
@@ -84,6 +93,7 @@ export const initialNodes = [
     type: "output",
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#E96343", color: "white" },
   },
   {
     id: "11",
@@ -92,6 +102,7 @@ export const initialNodes = [
     type: "output",
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#E96343", color: "white" },
   },
   {
     id: "12",
@@ -100,6 +111,7 @@ export const initialNodes = [
     targetPosition: "left",
     type: "output",
     sourcePosition: "right",
+    style: { backgroundColor: "#E8919D", color: "white" },
   },
   {
     id: "13",
@@ -108,31 +120,35 @@ export const initialNodes = [
     targetPosition: "left",
     type: "output",
     sourcePosition: "right",
+    style: { backgroundColor: "#E8919D", color: "white" },
   },
   {
     id: "14",
     position: { x: 250, y: 650 },
-    data: { label: "Material" },
+    data: { label: "Online" },
     type: "output",
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#A684EB", color: "white" },
   },
   {
     id: "15",
     position: { x: 250, y: 750 },
-    data: { label: "Production" },
+    data: { label: "DealerShip" },
     type: "output",
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#A684EB", color: "white" },
   },
 
-  //   sub
+    // subChildren Nodes
   {
     id: "16",
     position: { x: 450, y: -170 },
     data: { label: "B2B" },
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#2A4494", color: "white" },
   },
   {
     id: "17",
@@ -140,8 +156,10 @@ export const initialNodes = [
     data: { label: "B2C" },
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#2A4494", color: "white" },
   },
-  //   SUB2
+  
+  // B-SubChildrenNodes
 
   {
     id: "18",
@@ -149,6 +167,7 @@ export const initialNodes = [
     data: { label: "Online" },
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#2A4494", color: "white" },
   },
   {
     id: "19",
@@ -156,6 +175,7 @@ export const initialNodes = [
     data: { label: "InterView" },
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#2A4494", color: "white" },
   },
   {
     id: "20",
@@ -163,6 +183,7 @@ export const initialNodes = [
     data: { label: "Public Data" },
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#2A4494", color: "white" },
   },
   {
     id: "21",
@@ -170,14 +191,15 @@ export const initialNodes = [
     data: { label: "Health" },
     targetPosition: "left",
     sourcePosition: "right",
+    style: { backgroundColor: "#2A4494", color: "white" },
   },
   {
     id: "22",
     position: { x: 1050, y: -200 },
     data: { label: "To Be Continued...." },
     targetPosition: "left",
-
     sourcePosition: "left",
+    style: { backgroundColor: "red", color: "white" },
   },
 ];
 
